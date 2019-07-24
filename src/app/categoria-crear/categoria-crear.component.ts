@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { CuentaService } from "../cuenta.service";
 import { FormGroup, FormControl, FormBuilder, Validators,FormsModule } from '@angular/forms';
 
-
 @Component({
   selector: 'app-categoria-crear',
   templateUrl: './categoria-crear.component.html'//,
