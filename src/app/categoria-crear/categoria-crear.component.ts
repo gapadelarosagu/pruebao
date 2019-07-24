@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { CuentaService } from "../cuenta.service";
-import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormControl, FormBuilder, Validators,FormsModule } from '@angular/forms';
 
 
 @Component({
   selector: 'app-categoria-crear',
-  templateUrl: './categoria-crear.component.html',
-  styleUrls: ['./categoria-crear.component.css']
+  templateUrl: './categoria-crear.component.html'//,
+  //styleUrls: ['./categoria-crear.component.css']
 }) 
 export class CategoriaCrearComponent implements OnInit {
   public categorias; 

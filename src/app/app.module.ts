@@ -10,6 +10,7 @@ import { CategoriaDetailsComponent } from './categoria-details/categoria-details
 import { CategoriaCrearComponent } from './categoria-crear/categoria-crear.component';
 import { MovimientosTotalComponent } from './movimientos-total/movimientos-total.component';
 import { MovimientosCategoriasComponent } from './movimientos-categorias/movimientos-categorias.component';
+import { FormsModule,ReactiveFormsModule  }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { MovimientosCategoriasComponent } from './movimientos-categorias/movimie
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+      ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
