@@ -59,9 +59,12 @@ export class CategoriaCrearComponent implements OnInit {
         this.createForm();
   }
 
-  crearCategoria(id,nombre,monto) {
-    console.log(id,nombre,monto);
-    this.apicuenta.crearCat(id,nombre,monto)
+  crearCategoria(objeto) {
+    console.log(objeto);
+    var {nomcat,monto}=objeto;
+    var id=this.id;
+    console.log(id,nomcat,monto);
+    this.apicuenta.crearCat(id,nomcat,monto)
     .subscribe(
       (cat)=> {
         this.apicuenta.getCategorias(id).subscribe(
